@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
-import Toggle from "../Toggle"
-import "./index.css"
-import { Svgs } from "../../assets"
+import Toggle from "../toggleTheme/Toggle.jsx"
+// import "../../index.scss"
+// import { Svgs } from "../../assets"
 
 export const Header = () => {
   const navigate = useNavigate()
@@ -108,7 +108,7 @@ export const Header = () => {
                   </button>
                   <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 z-10 w-max">
                     <li className="flex items-center rounded-t bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
-                      <img alt="Icon" src={Svgs.PhoneNumber} className="pr-2" />
+                      {/* <img alt="Icon" src={Svgs.PhoneNumber} className="pr-2" /> */}
                       <button
                         onClick={() => {
                           navigate("/product/phonenumber")
@@ -119,7 +119,7 @@ export const Header = () => {
                       </button>
                     </li>
                     <li className="flex items-center bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
-                      <img alt="Icon" src={Svgs.Contacts} className="pr-2" />
+                      {/* <img alt="Icon" src={Svgs.Contacts} className="pr-2" /> */}
                       <button
                         onClick={() => {
                           navigate("/product/contact")
@@ -130,7 +130,7 @@ export const Header = () => {
                       </button>
                     </li>
                     <li className="flex items-center bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
-                      <img alt="Icon" src={Svgs.Calling} className="pr-2" />
+                      {/* <img alt="Icon" src={Svgs.Calling} className="pr-2" /> */}
                       <button
                         onClick={() => {
                           navigate("/product/calling")
@@ -141,7 +141,7 @@ export const Header = () => {
                       </button>
                     </li>
                     <li className="flex items-center bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
-                      <img alt="Icon" src={Svgs.Teams} className="pr-2" />
+                      {/* <img alt="Icon" src={Svgs.Teams} className="pr-2" /> */}
                       <button
                         onClick={() => {
                           navigate("/product/team")
@@ -152,7 +152,7 @@ export const Header = () => {
                       </button>
                     </li>
                     <li className="flex items-center bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
-                      <img alt="Icon" src={Svgs.Messaging} className="pr-2" />
+                      {/* <img alt="Icon" src={Svgs.Messaging} className="pr-2" /> */}
                       <button
                         onClick={() => {
                           navigate("/product/messaging")
@@ -165,7 +165,7 @@ export const Header = () => {
                     <li className="flex items-center rounded-b bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
                       <img
                         alt="Icon"
-                        src={Svgs.Integrations}
+                        // src={Svgs.Integrations}
                         className="pr-2"
                       />
                       <button
@@ -194,7 +194,7 @@ export const Header = () => {
                   </button>
                   <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 z-10 w-max">
                     <li className="flex items-center rounded-t bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
-                      <img alt="Icon" src={Svgs.Startup} className="pr-2" />
+                      {/* <img alt="Icon" src={Svgs.Startup} className="pr-2" /> */}
                       <button
                         onClick={() => {
                           navigate("/usecase/startup")
@@ -207,7 +207,7 @@ export const Header = () => {
                     <li className="flex items-center bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
                       <img
                         alt="Icon"
-                        src={Svgs.ProfessionalService}
+                        // src={Svgs.ProfessionalService}
                         className="pr-2"
                       />
                       <button
@@ -220,7 +220,7 @@ export const Header = () => {
                       </button>
                     </li>
                     <li className="flex items-center bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
-                      <img alt="Icon" src={Svgs.Education} className="pr-2" />
+                      {/* <img alt="Icon" src={Svgs.Education} className="pr-2" /> */}
                       <button
                         onClick={() => {
                           navigate("/usecase/education")
@@ -233,7 +233,7 @@ export const Header = () => {
                     <li className="flex items-center bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
                       <img
                         alt="Icon"
-                        src={Svgs.SmallBusiness}
+                        // src={Svgs.SmallBusiness}
                         className="pr-2"
                       />
                       <button
@@ -246,7 +246,7 @@ export const Header = () => {
                       </button>
                     </li>
                     <li className="flex items-center bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
-                      <img alt="Icon" src={Svgs.RealEstate} className="pr-2" />
+                      {/* <img alt="Icon" src={Svgs.RealEstate} className="pr-2" /> */}
                       <button
                         onClick={() => {
                           navigate("/usecase/realestate")
@@ -257,7 +257,7 @@ export const Header = () => {
                       </button>
                     </li>
                     <li className="flex items-center rounded-b bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
-                      <img alt="Icon" src={Svgs.Logistic} className="pr-2" />
+                      {/* <img alt="Icon" src={Svgs.Logistic} className="pr-2" /> */}
                       <button
                         onClick={() => {
                           navigate("/usecase/logistic")
@@ -284,7 +284,7 @@ export const Header = () => {
                   </button>
                   <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 z-10 w-max">
                     <li className="flex items-center rounded-t bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
-                      <img alt="Icon" src={Svgs.About} className="pr-2" />
+                      {/* <img alt="Icon" src={Svgs.About} className="pr-2" /> */}
                       <button
                         onClick={() => {
                           navigate("/company/aboutus")
@@ -295,7 +295,7 @@ export const Header = () => {
                       </button>
                     </li>
                     <li className="flex items-center bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
-                      <img alt="Icon" src={Svgs.Career} className="pr-2" />
+                      {/* <img alt="Icon" src={Svgs.Career} className="pr-2" /> */}
                       <button
                         onClick={() => {
                           navigate("/company/career")
@@ -306,7 +306,7 @@ export const Header = () => {
                       </button>
                     </li>
                     <li className="flex items-center rounded-b bg-white hover:bg-gray-200 py-2 px-4 whitespace-no-wrap">
-                      <img alt="Icon" src={Svgs.Press} className="pr-2" />
+                      {/* <img alt="Icon" src={Svgs.Press} className="pr-2" /> */}
                       <button
                         onClick={() => {
                           navigate("/company/press")

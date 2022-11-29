@@ -1,3 +1,4 @@
+// const path = require('path')
 const paths = require('./paths')
 const Dotenv = require('dotenv-webpack')
 const { merge } = require('webpack-merge')
@@ -25,7 +26,8 @@ module.exports = merge(common, {
     rules: [
       // ... other rules
       {
-        test: /\.[js]sx?$/,
+        test: /\.(jsx|js)$/,
+        // include: path.resolve(__dirname, 'src'),
         exclude: /node_modules/,
         use: [
           // ... other loaders
@@ -50,4 +52,7 @@ module.exports = merge(common, {
     // new webpack.HotModuleReplacementPlugin(),
     new ReactRefreshWebpackPlugin(),
   ].filter(Boolean),
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+  }
 })

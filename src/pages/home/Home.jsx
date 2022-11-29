@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Home() {
+export function Home() {
     const [darkToggle, setDarkToggle] = React.useState(false)
     return (
         <div

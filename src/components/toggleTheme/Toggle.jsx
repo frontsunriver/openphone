@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
-import { setTheme } from "../themes/Themes"
-import "./index.css"
+import { setTheme } from "../themes/Themes.jsx"
+import "../../index.scss"
 
 function Toggle() {
   // false = dark mode because of the way I wrote the CSS
@@ -36,7 +36,6 @@ function Toggle() {
   }, [themeMode])
 
   return (
-    // <div className="toggle_container">
     <button
       type="button"
       role="switch"
@@ -69,7 +68,6 @@ function Toggle() {
         </div>
       </span>
     </button>
-    // </div>
   )
 }
 
