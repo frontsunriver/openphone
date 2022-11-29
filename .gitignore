@@ -5,3 +5,4 @@ stats.json
 package-lock.json
 # jetbrains
 .idea
+ .env.* 

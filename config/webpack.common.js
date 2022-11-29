@@ -88,4 +88,16 @@ module.exports = {
       { test: /\.(woff(2)?|eot|ttf|otf|)$/, type: 'asset/inline' },
     ],
   },
+
+  // resolveLoader: {
+  //   modules: [
+  //     path.join(__dirname, 'node_modules')
+  //   ]
+  // },
+  // resolve: {
+  //   modules: [
+  //     path.join(__dirname, 'node_modules')
+  //   ]
+  // }
+
 }
